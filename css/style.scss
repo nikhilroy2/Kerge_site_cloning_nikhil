@@ -1,3 +1,32 @@
+// .........SCSS.........
+$white: #fff;
+$black: #000;
+$color3: #333;
+$color6: #666;
+$bg_fc: #fcfcfc;
+$color_f5: #f5f5f5;
+$cyan: #0099E5;
+$white_e: #EEEEEE;
+
+
+$h1_size: 48px;
+$h2_size: 30px;
+$h3_size: 24px;
+$h4_size: 21px;
+$h5_size: 16px;
+$h6_size: 14px;
+// mixin.......
+@mixin top_left($top:0px,$left: 0px){
+    top: $top;
+    left: $left;
+}
+// mixin.......End
+// .........SCSS.........End
+
+
+
+
+
 // .........Global...........
 *{
     box-sizing: border-box;
@@ -8,16 +37,167 @@ body{
     margin: 0;
     padding: 0;
 }
+/* ...heading..h1-h6
+48px
+30px
+24px
+21px
+18px
+16px
+14px
+*/
+h1{
+    font-size: $h1_size;
+    color: $color3;
+}
+h2{
+    font-size: $h2_size;
+    color: $color3;
+}
+h3{
+    font-size: $h3_size;
+    color: $color3;
+}
+h4{
+    font-size: $h4_size;
+    color: $color3;
+}
+h5{
+    font-size: $h5_size;
+    color: $color3;
+}
+h6{
+    font-size: $h6_size;
+    color: $color3;
+}
+ul,ol,li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a,a:hover,a:visited,a:active{
+    color: $color6;
+    text-decoration: none;
+    display: inline-block;
+}
+button.btn{
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    &:active,&:hover,&:visited{
+        @extend button.btn;
+    }
+}
+// ...heading..end
 // .........Global...........end
 
-// .........SCSS.........
 
-// .........SCSS.........End
 
 
 // .........header......
 header{
-
+    .user_bar_control{
+        position: fixed;
+        @include top_left;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 4px 8px;
+        box-shadow: 1px 0 3px rgba($color: #000000, $alpha: .05);
+        .pro{
+            display: flex;
+            align-items: center;
+            img{
+                $s: 40px;
+                width: $s;
+                height: $s;
+            }
+            h4{
+                margin: 0;
+                padding: 0;
+                padding-left: 8px;
+            }
+        }
+        button.btn_bar{
+            font-size: $h4_size;
+        }
+        display: none;
+        @media (max-width: 765px) {
+            display: flex;
+        }
+    }
+    aside{
+        position: fixed;
+        @include top_left;
+        width: 200px;
+        height: 100%;
+        padding: 32px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-shadow: 1px 0 3px rgba($color: #000000, $alpha: .05);
+        @media (max-width: 765px) {
+            margin-top: 50px;
+        }
+        @media (min-width: 766px) {
+            left: 0!important;
+        }
+        .user_info{
+            text-align: center;
+            img{
+                width: 80px;
+            }
+        }
+        ul.page_list{
+            text-align: center;
+            a{
+                padding: 7px 0;
+                display: block;
+                border-bottom: 1px solid $color_f5;
+                border-top: 1px solid $color_f5;
+                font-size: $h6_size;
+                &.active{
+                    background: $bg_fc;
+                }
+                &:hover{
+                    background: $bg_fc;
+                }
+            }
+        }
+        ul.social_list{
+            display: flex;
+            justify-content: center;
+            padding: 45px 0;
+            a{
+                $size: 32px;
+                width: $size;
+                height: $size;
+                text-align: center;
+                line-height: $size;
+                background: $white_e;
+                margin-right: 4px;
+                transition: .2s;
+                color: $color6;
+                &:hover{
+                    background: $cyan;
+                    color: $white;
+                }
+                .last{
+                    margin-right: 0;
+                }
+            }
+        }
+        h6.reserve{
+            text-align: center;
+            color: #aeaeae;
+            font-size: 12px;
+        }
+        
+    }
 }
 // .........header......End
 

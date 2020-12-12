@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- FontAwesome 5 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+        integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <!-- FontAwesome 5 End -->
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <!-- Google Font End-->
@@ -18,7 +22,44 @@
 
 <body>
     <!-- header -->
-    <header></header>
+    <header>
+        <div class="user_bar_control">
+            <div class="pro">
+                <img src="./img/photo.jpg" alt="photo.jpg">
+                <h4>Alex Smith</h4>
+            </div>
+            <button data-name="btn_bar" class="btn btn_bar">
+                <i class="fas fa-bars    "></i>
+            </button>
+        </div>
+        <aside data-name="aside">
+
+            <div class="aside_action">
+                <div class="user_info">
+                    <img src="./img/photo.jpg" alt="">
+                    <h3>
+                        Alex Smith
+                    </h3>
+                </div>
+                <ul class="page_list">
+                    <li><a class="active" href="#about_me"> About me </a></li>
+                    <li><a href="#resume"> Resume </a></li>
+                    <li><a href="#portfolio"> Portfolio </a></li>
+                    <li><a href="#blog"> Blog </a></li>
+                    <li><a href="#contact"> Contact </a></li>
+                </ul>
+                <ul class="social_list">
+                    <li><a href="#twiter"><i class="fab fa-twitter    "></i></a></li>
+                    <li><a href="#linkedin"><i class="fab fa-linkedin    "></i></a></li>
+                    <li><a href="#facebook" class="last"><i class="fab fa-facebook-f    "></i></a></li>
+                </ul>
+            </div>
+            <h6 class="reserve">
+                © 2020 All rights reserved.
+            </h6>
+
+        </aside>
+    </header>
     <!-- header end -->
 
 
