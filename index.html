@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
         integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
     <!-- FontAwesome 5 End -->
+    <!-- Swiperjs css -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- Swiperjs css End -->
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <!-- Google Font End-->
@@ -26,13 +29,15 @@
         <div class="user_bar_control">
             <div class="pro">
                 <img src="./img/photo.jpg" alt="photo.jpg">
-                <h4>Alex Smith</h4>
+                <a href="#">
+                    <h4>Alex Smith</h4>
+                </a>
             </div>
             <button data-name="btn_bar" class="btn btn_bar">
                 <i class="fas fa-bars    "></i>
             </button>
         </div>
-        <aside data-name="aside">
+        <aside data-name="aside" style="left: -100%" class="hide_aside">
 
             <div class="aside_action">
                 <div class="user_info">
@@ -64,7 +69,44 @@
 
 
     <!-- main -->
-    <main></main>
+    <main>
+        <!-- section 1 -->
+        <section class="section_1">
+            <div class="row">
+                <div class="col col-sm-2">
+
+                </div>
+                <div class="col col-sm-2 col_details">
+                    <div class="slider_wrapper">
+                        <!-- Swiper -->
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">Web Designer</div>
+                                <div class="swiper-slide">Frontend-developer</div>
+                            </div>
+                        </div>
+
+                        <!-- Swiper JS -->
+                    </div>
+                    <h1>
+                        Alex Smith
+                    </h1>
+                    <p class="context">
+                        Praesent sed aliquam arcu, non accumsan neque. In odio ante, vulputate ac magna vel, pharetra
+                        lobortis quam. Duis enim tortor, egestas et felis id, lobortis malesuada magna. Nunc sit amet
+                        sagittis nisi, eu semper nisl. Cras ut dictum nisl. Donec tincidunt eget orci.
+                        <br>
+                        <br>
+                        Aliquam mollis, leo nec commodo facilisis, turpis lorem dapibus erat, sed consectetur nunc nulla
+                        ac elit. Suspendisse dictum id dui mollis auctor. Etiam id sapien neque. Cras nec rhoncus sem.
+                        Mauris metus ligula, varius vel iaculis at, pulvinar tincidunt magna.
+                    </p>
+                    <a href="#"> Download CV</a>
+                </div>
+            </div>
+        </section>
+        <!-- section 1 end -->
+    </main>
 
     <!-- main end -->
 
@@ -75,7 +117,10 @@
 
 
     <!-- script -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <!-- swiperjs -->
+    <!-- swiperjs end -->
     <script src="js/script.js"></script>
     <!-- script end-->
 

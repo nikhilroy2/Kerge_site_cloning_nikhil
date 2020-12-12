@@ -7,5 +7,13 @@ $(()=> {
         } else {
             $('[data-name="aside"]').animate({left: '-100%'}).addClass('hide_aside')
         }
+
     })
 })
+
+var swiper = new Swiper('.swiper-container', {
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+});

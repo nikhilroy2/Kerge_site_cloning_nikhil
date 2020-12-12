@@ -7,8 +7,8 @@ $bg_fc: #fcfcfc;
 $color_f5: #f5f5f5;
 $cyan: #0099E5;
 $white_e: #EEEEEE;
-
-
+$color8: #888;
+$line_defailt: 28px;
 $h1_size: 48px;
 $h2_size: 30px;
 $h3_size: 24px;
@@ -204,7 +204,67 @@ header{
 
 // ........Main.......
 main{
+    margin-left: 210px;
+    @media (max-width: 765px) {
+        margin-top: 50px;
+        margin-left: 0;
+    }
+    .row{
+        display: flex;
+        flex-flow: row wrap;
+        .col{
+            width: 100%;
+            padding: 90px 50px;
+            @media (max-width: 765px){
+                padding: 10px 10px;
+                
+            }
+        }
+        .col:first-of-type{
+            background: $black url('../img/sp_photo.jpg') center top/cover no-repeat;
+            @media (max-width: 765px){
+                height: 80vmin;
+                
+            }
+        }
+        @media (min-width: 765px){
+            .col-sm-2{
+                width: 50%;
+            }
+            
+        }
+        .col_details{
 
+            h1{
+                margin: 0;
+                padding: 0;
+            }
+            .slider_wrapper{
+                .swiper-slide {
+                    font-size: $h6_size;
+                    display: block;
+                    color: $color8;
+                  }
+
+            }
+            .context{
+                font-size: $h6_size;
+                color: $color3;
+                line-height: $line_defailt;
+                padding-bottom: 15px;
+                &~ a{
+                    padding: 8px 25px;
+                    border: 2px solid $cyan;
+                    transition: .3s;
+                    font-size: $h6_size;
+                    &:hover{
+                        background: $cyan;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
 }
 // ........Main.......End
 
