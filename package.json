@@ -1,0 +1,26 @@
+{
+  "name": "kerge",
+  "version": "1.0.0",
+  "description": "This is cloning website practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "hello world"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikhilroy2/Kerge_site_cloning_nikhil.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "javascript",
+    "cloning",
+    "website"
+  ],
+  "author": "Nikhil Roy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nikhilroy2/Kerge_site_cloning_nikhil/issues"
+  },
+  "homepage": "https://github.com/nikhilroy2/Kerge_site_cloning_nikhil#readme"
+}
